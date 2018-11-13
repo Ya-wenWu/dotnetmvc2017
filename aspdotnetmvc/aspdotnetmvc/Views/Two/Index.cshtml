@@ -1,17 +1,35 @@
 ﻿
+@model aspdotnetmvc.Models.ComputerModel
 @{
-    Layout = null;
+    //Layout = null;
+    ViewBag.Title = "index-socket";
 }
 
 <!DOCTYPE html>
-
+<h2>Index-Socket</h2>
+@using (Html.BeginForm("Login", "Computer"))
+{
+    <p>@Html.TextBoxFor(form => form.NAME)</p>
+    <p>@Html.EditorFor(form => form.BIRTHDAY)</p>
+    <input type="submit" name="SendYourMessage" />
+}
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
 <body>
-    <div> 
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                <td>請輸入socket通訊測試字串：</td>
+
+                <input name="input_string" value="請輸入字串" />
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

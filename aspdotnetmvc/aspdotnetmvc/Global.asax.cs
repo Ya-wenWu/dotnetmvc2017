@@ -14,7 +14,7 @@ namespace aspdotnetmvc
 		{
 			AreaRegistration.RegisterAllAreas();
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-			RouteConfig.RegisterRoutes(RouteTable.Routes);
+			RouteConfig.RegisterRoutes(RouteTable.Routes);//Router Start
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 		}
 	}
